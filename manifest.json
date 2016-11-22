@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tabs4Later",
+  "description": "This extension allows users to store open tabs in a temporary saved group to open in at a later time",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "./docs/1_Desktop_Icons/icon_048.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "chrome_url_overrides":
+	{
+		"newtab": "newtab.html"
+	},
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  }
+}

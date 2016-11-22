@@ -1,0 +1,55 @@
+body {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div {
+  font-size: 18px;
+}
+
+.tab-groups {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;;
+}
+
+.single-tab-group {
+  border: 1px solid navy;
+  min-height: 150px;
+  width: 100%;
+}
+
+.open-tabs {
+  border: 1px solid red;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 20%;
+  min-width: 15%;
+}
+
+.single-open-tab {
+  font-size: 18px;
+  border-top: 1px solid magenta;
+  padding-left: 10px;
+}
+
+.single-open-tab:first-child {
+  font-size: 18px;
+  border-top: none;
+}
+
+.groupped-tabs {
+  list-style: none;
+  display: relative;
+  overflow: hidden;
+}
+
+.single-groupped-tab {
+  background-color: red;
+  margin: 10px 10px;
+  float: left;
+  width: 100px;
+}
