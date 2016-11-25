@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /*overflow: hidden;*/
 }
 
 div {
@@ -12,12 +13,13 @@ div {
 .tab-groups {
   border: 1px solid black;
   width: 100%;
-  text-align: center;;
+  text-align: center;
+  /*overflow: auto;*/
 }
 
 .single-tab-group {
   border: 1px solid navy;
-  min-height: 150px;
+  min-height: 100px;
   width: 100%;
 }
 
@@ -28,12 +30,17 @@ div {
   padding: 0;
   max-width: 20%;
   min-width: 15%;
+  max-height: 95vh;
+  overflow: auto;
 }
 
 .single-open-tab {
   font-size: 18px;
   border-top: 1px solid magenta;
   padding-left: 10px;
+  height: 32px;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .single-open-tab:first-child {
@@ -45,6 +52,8 @@ div {
   list-style: none;
   display: relative;
   overflow: hidden;
+  border: 5px solid red;
+  min-height: 100px;
 }
 
 .single-groupped-tab {
@@ -52,4 +61,7 @@ div {
   margin: 10px 10px;
   float: left;
   width: 100px;
+  height: 50px;
+  white-space: nowrap;
+  overflow: hidden;
 }
