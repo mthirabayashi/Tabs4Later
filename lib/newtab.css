@@ -31,22 +31,21 @@ div {
   max-width: 20%;
   min-width: 15%;
   max-height: 95vh;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .single-open-tab {
-  font-size: 16px;
+  font-size: 14px;
   border-top: 1px solid magenta;
   padding-left: 10px;
   padding-top: 10px;
   height: 28px;
   white-space: nowrap;
-  overflow-x: auto;
+  overflow: hidden;
   /*cursor: url("../docs/openhand.cur"), default !important;*/
 }
 
 .single-open-tab:first-child {
-  font-size: 18px;
   border-top: none;
 }
 
@@ -61,13 +60,41 @@ div {
 .single-groupped-tab {
   background-color: red;
   margin: 10px 10px;
+  /*padding-top: 20px;*/
   float: left;
   width: 100px;
   height: 50px;
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
 }
+
+.single-groupped-tab div {
+  /*margin: 10px 10px;*/
+  /*float: left;*/
+  font-size: 16px;
+  position: relative;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.hidden-remove {
+  float: right;
+  position: relative;
+  cursor: pointer;
+  /*margin-top: -13px;*/
+  font-size: 11px;
+  /*margin-top: -15px;*/
+  /*font-family: helvetica;*/
+  /*color: tray;*/
+  /*display: none;*/
+  z-index: 100;
+}
+
+/*.li:hover .hidden-remove{
+  display: block;
+}*/
 
 .grabbable {
   cursor: move; /* fallback if grab cursor is unsupported */
@@ -85,4 +112,5 @@ div {
 
 /*.no-drop-zone {
   cursor: no-drop;
+  border: 10px solid green;
 }*/
