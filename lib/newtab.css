@@ -31,7 +31,7 @@ div {
   max-width: 20%;
   min-width: 15%;
   max-height: 95vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .single-open-tab {
