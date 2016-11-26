@@ -79,7 +79,7 @@ div {
   padding-left: 10px;
 }
 
-.hidden-remove {
+.hidden-remove-saved {
   float: right;
   position: relative;
   cursor: pointer;
@@ -89,6 +89,14 @@ div {
   /*font-family: helvetica;*/
   /*color: tray;*/
   /*display: none;*/
+  z-index: 100;
+}
+
+.hidden-remove-open {
+  float: right;
+  position: relative;
+  cursor: pointer;
+  font-size: 11px;
   z-index: 100;
 }
 
