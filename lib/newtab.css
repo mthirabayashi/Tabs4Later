@@ -35,12 +35,14 @@ div {
 }
 
 .single-open-tab {
-  font-size: 18px;
+  font-size: 16px;
   border-top: 1px solid magenta;
   padding-left: 10px;
-  height: 32px;
+  padding-top: 10px;
+  height: 28px;
   white-space: nowrap;
   overflow-x: auto;
+  /*cursor: url("../docs/openhand.cur"), default !important;*/
 }
 
 .single-open-tab:first-child {
@@ -64,4 +66,23 @@ div {
   height: 50px;
   white-space: nowrap;
   overflow: hidden;
+  cursor: pointer;
 }
+
+.grabbable {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  /*border: 10px solid green;*/
+}
+
+.grabbable:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+/*.no-drop-zone {
+  cursor: no-drop;
+}*/
