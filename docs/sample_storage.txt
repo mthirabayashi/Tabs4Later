@@ -1,0 +1,49 @@
+example chrome storage
+
+{
+  tabs4later: [
+  {
+    group1: [
+      {
+        url1: {
+          id: id,
+          url: url,
+          title: title
+        }
+      },
+      {
+        url2: {
+          id: id2,
+          url: url2,
+          title: title2
+        }
+      }
+    ]
+  },
+    group2: [
+      {
+        url3: {
+          id: id3,
+          url: url3,
+          title, title3
+        }
+      }
+    ]
+  ]
+}
+
+current storage config
+{
+  tabs4later: {
+    url1: {
+      id: id,
+      url: url,
+      title: title
+    },
+    url2: {
+      id: id2,
+      url: url2,
+      title: title2
+    }
+  }
+}
