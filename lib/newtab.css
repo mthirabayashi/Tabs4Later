@@ -1,5 +1,10 @@
+html {
+  background-color: antiquewhite;
+  min-width: 270px;
+}
+
 body {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -18,30 +23,32 @@ div {
 }
 
 .single-tab-group {
-  border: 1px solid navy;
+  /*border: 1px solid navy;*/
   min-height: 100px;
   width: 100%;
+  margin-top: 25px;
 }
 
 .open-tabs {
-  border: 1px solid red;
+  border: 1px solid gray;
   list-style: none;
   margin: 0;
   padding: 0;
   max-width: 20%;
   min-width: 15%;
-  max-height: 95vh;
+  height: 95vh;
   overflow-x: hidden;
 }
 
 .single-open-tab {
   font-size: 14px;
-  border-top: 1px solid magenta;
+  border-top: 1px solid gray;
   padding-left: 10px;
   padding-top: 10px;
   height: 28px;
   white-space: nowrap;
   overflow: hidden;
+  /*background-color: silver;*/
   /*cursor: url("../docs/openhand.cur"), default !important;*/
 }
 
@@ -53,14 +60,14 @@ div {
   list-style: none;
   display: relative;
   overflow: hidden;
-  border: 5px solid red;
+  border: 1px solid gray;
   min-height: 100px;
+  margin-top: 0;
 }
 
 .single-groupped-tab {
-  background-color: red;
+  background-color: silver;
   margin: 10px 10px;
-  /*padding-top: 20px;*/
   float: left;
   width: 100px;
   height: 50px;
@@ -70,39 +77,56 @@ div {
   position: relative;
 }
 
+.single-groupped-tab:hover {
+  border: 2px solid red;
+}
+
 .single-groupped-tab div {
-  /*margin: 10px 10px;*/
-  /*float: left;*/
   font-size: 16px;
   position: relative;
   padding-top: 15px;
   padding-left: 10px;
+  text-align: left;
 }
 
 .hidden-remove-saved {
   float: right;
   position: relative;
   cursor: pointer;
-  /*margin-top: -13px;*/
-  font-size: 11px;
-  /*margin-top: -15px;*/
-  /*font-family: helvetica;*/
-  /*color: tray;*/
-  /*display: none;*/
+  font-size: 14px;
   z-index: 100;
+  display: none;
+  /*background-color: transparent;*/
+  border: 1px solid gray;
 }
 
 .hidden-remove-open {
   float: right;
+  margin-top: -3px;
   position: relative;
   cursor: pointer;
-  font-size: 11px;
+  font-size: 14px;
   z-index: 100;
+  display: none;
+  /*background-color: transparent;*/
+  border: 1px solid gray;
 }
 
-/*.li:hover .hidden-remove{
+li:hover .hidden-remove-open {
   display: block;
-}*/
+}
+
+li:hover .hidden-remove-saved {
+  display: block;
+}
+
+.hidden-remove-saved:hover {
+  background-color: white;
+}
+
+.hidden-remove-open:hover {
+  background-color: red;
+}
 
 .grabbable {
   /*background-color: green;*/
@@ -119,7 +143,20 @@ div {
   cursor: -webkit-grabbing;
 }
 
-/*.no-drop-zone {
-  cursor: no-drop;
-  border: 10px solid green;
-}*/
+.group-name {
+  background-color: red;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+.group-description {
+  font-size: 14px;
+  width: 50%;
+  background-color: blue;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
