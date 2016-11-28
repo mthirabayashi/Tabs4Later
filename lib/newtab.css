@@ -26,7 +26,7 @@ div {
   /*border: 1px solid navy;*/
   min-height: 100px;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 45px;
 }
 
 .open-tabs {
@@ -63,6 +63,7 @@ div {
   border: 1px solid gray;
   min-height: 100px;
   margin-top: 0;
+  padding: 5px;
 }
 
 .single-groupped-tab {
@@ -146,7 +147,7 @@ li:hover .hidden-remove-saved {
 .group-name {
   background-color: red;
   display: inline-block;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   padding: 0;
   font-size: 22px;
 }
@@ -161,6 +162,34 @@ li:hover .hidden-remove-saved {
   font-style: italic;
 }
 
+.tab-group-container {
+  /*border: 10px solid black;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .create-new-group {
   margin-bottom: 40px;
+  height: 24px;
+  width: 175px;
+  cursor: pointer;
+}
+
+.clear-group-tabs {
+  /*float: right;*/
+  position: relative;
+  height: 24px;
+  width: 125px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.delete-tab-group {
+  /*float: left;*/
+  position: relative;
+  height: 24px;
+  width: 125px;
+  margin-top: 3px;
+  cursor: pointer;
 }
