@@ -19,7 +19,7 @@
 		"newtab": "./lib/newtab.html"
 	},
   "background": {
-    "persistent": false,
+    "persistent": true,
     "scripts": ["./lib/background.js"]
   },
   "web_accessible_resources": [

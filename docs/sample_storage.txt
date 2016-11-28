@@ -1,25 +1,25 @@
 example chrome storage
 
 {
-  tabs4later: [
-  {
+  tabs4later: {
     group1: [
       {
         url1: {
           id: id,
           url: url,
-          title: title
+          title: title,
+          idle: 2
         }
       },
       {
         url2: {
           id: id2,
           url: url2,
-          title: title2
+          title: title2,
+          idle: 1
         }
       }
-    ]
-  },
+    ],
     group2: [
       {
         url3: {
@@ -29,7 +29,7 @@ example chrome storage
         }
       }
     ]
-  ]
+  }
 }
 
 current storage config
