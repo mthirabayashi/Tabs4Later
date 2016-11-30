@@ -1,6 +1,15 @@
+* {
+  font-family: 'Nunito', sans-serif;;
+}
+
 html {
-  background-color: antiquewhite;
+  /*background-color: antiquewhite;*/
   min-width: 270px;
+  background-image: url("../docs/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*overflow: none;*/
+  /*border: 1px solid green;*/
 }
 
 body {
@@ -16,8 +25,8 @@ div {
 }
 
 .tab-groups {
-  border: 1px solid black;
-  width: 100%;
+  /*border: 3px solid red;*/
+  width: 80%;
   text-align: center;
   /*overflow: auto;*/
 }
@@ -30,19 +39,34 @@ div {
 }
 
 .open-tabs {
-  border: 1px solid gray;
+  /*display: fixed;*/
+  /*position: fixed;*/
+  border: 1px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
-  max-width: 20%;
+  /*max-width: 20%;
   min-width: 15%;
+  height: 95vh;*/
+  overflow-x: hidden;
+}
+
+.open-tabs-container {
+  position: fixed;
+  top: 2vh;
+  right: 0;
+  border: 1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
   height: 95vh;
   overflow-x: hidden;
 }
 
 .single-open-tab {
   font-size: 14px;
-  border-top: 1px solid gray;
+  border-top: 1px solid black;
   padding-left: 10px;
   padding-top: 10px;
   height: 28px;
@@ -60,14 +84,18 @@ div {
   list-style: none;
   display: relative;
   overflow: hidden;
-  border: 1px solid gray;
-  min-height: 100px;
+  border: 1px solid black;
+  min-height: 80px;
   margin-top: 0;
   padding: 5px;
+  /*background-color: #191fff;*/
+  border-radius: 25px;
 }
 
 .single-groupped-tab {
-  background-color: silver;
+  background-color: #ff3434;
+  background-color: darkcyan;
+  border-radius: 15px;
   margin: 10px 10px;
   float: left;
   width: 100px;
@@ -83,7 +111,7 @@ div {
 }
 
 .single-groupped-tab div {
-  font-size: 16px;
+  font-size: 13px;
   position: relative;
   padding-top: 15px;
   padding-left: 10px;
@@ -104,6 +132,7 @@ div {
 .hidden-remove-open {
   float: right;
   margin-top: -3px;
+  margin-right: 2px;
   position: relative;
   cursor: pointer;
   font-size: 14px;
@@ -119,6 +148,7 @@ li:hover .hidden-remove-open {
 
 li:hover .hidden-remove-saved {
   display: block;
+  border-radius: 10px;
 }
 
 .hidden-remove-saved:hover {
@@ -126,7 +156,7 @@ li:hover .hidden-remove-saved {
 }
 
 .hidden-remove-open:hover {
-  background-color: red;
+  background-color: #ff3434;
 }
 
 .grabbable {
@@ -145,17 +175,23 @@ li:hover .hidden-remove-saved {
 }
 
 .group-name {
-  background-color: red;
+  /*background-color: red;*/
   display: inline-block;
   /*margin-top: 20px;*/
   padding: 0;
   font-size: 22px;
 }
 
+.group-title {
+  display: inline-block;
+  padding: 0;
+  font-size: 34px;
+}
+
 .group-description {
   font-size: 14px;
   width: 50%;
-  background-color: blue;
+  /*background-color: blue;*/
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -174,6 +210,15 @@ li:hover .hidden-remove-saved {
   height: 24px;
   width: 175px;
   cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  outline: none;
+}
+
+.create-new-group:hover {
+    background-color: #ff3434;
+    border: 1px solid black;
 }
 
 .clear-group-tabs {
@@ -183,6 +228,16 @@ li:hover .hidden-remove-saved {
   width: 125px;
   margin-top: 3px;
   cursor: pointer;
+  border: none;
+  margin: 0 15px;
+  border-radius: 15px;
+  background-color: white;
+  outline: none;
+}
+
+.clear-group-tabs:hover {
+    background-color: #ff3434;
+    border: 1px solid black;
 }
 
 .delete-tab-group {
@@ -192,4 +247,14 @@ li:hover .hidden-remove-saved {
   width: 125px;
   margin-top: 3px;
   cursor: pointer;
+  margin: 0 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  outline: none;
+}
+
+.delete-tab-group:hover {
+    background-color: #ff3434;
+    border: 1px solid black;
 }
