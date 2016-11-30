@@ -3,11 +3,23 @@ body {
   font-size: 100%;
 }
 
-.status {
-  /* avoid an excessively wide status text */
-  white-space: pre;
-  text-overflow: ellipsis;
-  /*overflow: hidden;*/
-  max-width: 400px;
-  font-size: 14px;
+.groups {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  /*margin-left: 10px;*/
+}
+
+.group-list {
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+  width: 150px;
+  list-style: none;
+  border-top: 1px solid black;
+  cursor: pointer;
+}
+
+.group-list:hover {
+  background-color: darkcyan;
 }

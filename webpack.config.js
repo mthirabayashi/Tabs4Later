@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./lib/newtab.js",
+  entry: "./lib/newtab.js", 
   output: {
   	filename: "./lib/bundle.js"
   },
