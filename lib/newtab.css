@@ -48,6 +48,7 @@ div {
   /*max-width: 20%;
   min-width: 15%;
   height: 95vh;*/
+  border-radius: 5px;
   overflow-x: hidden;
 }
 
@@ -55,7 +56,7 @@ div {
   position: fixed;
   top: 2vh;
   right: 0;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   list-style: none;
   margin: 0;
   padding: 0;
@@ -89,7 +90,7 @@ div {
   margin-top: 0;
   padding: 5px;
   /*background-color: #191fff;*/
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .single-groupped-tab {
@@ -211,14 +212,9 @@ li:hover .hidden-remove-saved {
   width: 175px;
   cursor: pointer;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: white;
   outline: none;
-}
-
-.create-new-group:hover {
-    background-color: #ff3434;
-    border: 1px solid black;
 }
 
 .clear-group-tabs {
@@ -230,17 +226,12 @@ li:hover .hidden-remove-saved {
   cursor: pointer;
   border: none;
   margin: 0 15px;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: white;
   outline: none;
 }
 
-.clear-group-tabs:hover {
-    background-color: #ff3434;
-    border: 1px solid black;
-}
-
-.delete-tab-group {
+.delete-tab-group, .open-all-tabs {
   /*float: left;*/
   position: relative;
   height: 24px;
@@ -249,12 +240,21 @@ li:hover .hidden-remove-saved {
   cursor: pointer;
   margin: 0 15px;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: white;
   outline: none;
 }
 
-.delete-tab-group:hover {
+.delete-tab-group:hover, .open-all-tabs:hover, .clear-group-tabs:hover, .create-new-group:hover {
     background-color: #ff3434;
     border: 1px solid black;
+}
+
+.hidden {
+  height: 24px;
+  width: 125px;
+  margin-top: 3px;
+  margin: 0 15px;
+  border-radius: 5px;
+  visibility: hidden;
 }
