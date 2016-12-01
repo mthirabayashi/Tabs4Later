@@ -38,3 +38,10 @@ body {
   cursor: default;
   background-color: green;
 }
+
+.no-work {
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  
+}
