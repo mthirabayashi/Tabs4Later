@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Tabs4Later",
-  "description": "This extension allows users to store open tabs in a temporary saved group to open in at a later time",
+  "description": "This extension allows users to store currently open tabs in a temporary saved group to re-opened at a later time",
   "version": "1.0",
 
   "browser_action": {
@@ -18,10 +18,6 @@
 	{
 		"newtab": "./lib/newtab.html"
 	},
-  "background": {
-    "persistent": true,
-    "scripts": ["./lib/background.js"]
-  },
   "web_accessible_resources": [
 		"./lib/newtab.html"
 	]
