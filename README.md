@@ -2,7 +2,7 @@
 
 ### Background
 
-Tab management is a hassle.  Many users will have 10+ tabs open at once due to researching/viewing multiple topics.  Tabs4Later reduces the number of running processes on the machine resulting in a cleaner, easier to use browser experience that is easy to use and easier on the computer. Users can save open tabs to be opened at a later time.  Temporarily closing tabs results in a faster web browsing experience.
+Tab management is a hassle.  Many users have 10+ tabs open at once due to researching/viewing multiple topics.  Tabs4Later reduces the number of running processes on the machine resulting in a cleaner, easier to use browser experience that is easy to use and easier on the computer. Users can save open tabs to be opened at a later time.  Temporarily closing tabs results in a faster web browsing experience.
 
 ### Functionality & MVP
 - [ ] Users can create tab groups
