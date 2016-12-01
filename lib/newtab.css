@@ -1,23 +1,19 @@
 * {
-  font-family: 'Nunito', sans-serif;;
+  font-family: 'Nunito', sans-serif;
+  color: white;
 }
 
 html {
-  /*background-color: antiquewhite;*/
   min-width: 270px;
-  background-image: url("../docs/background.jpg");
+  background-image: url("../docs/footer_lodyas.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /*overflow: none;*/
-  /*border: 1px solid green;*/
 }
 
 body {
-  /*border: 1px solid green;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /*overflow: hidden;*/
 }
 
 div {
@@ -25,29 +21,21 @@ div {
 }
 
 .tab-groups {
-  /*border: 3px solid red;*/
   width: 80%;
   text-align: center;
-  /*overflow: auto;*/
 }
 
 .single-tab-group {
-  /*border: 1px solid navy;*/
   min-height: 100px;
   width: 100%;
   margin-top: 45px;
 }
 
 .open-tabs {
-  /*display: fixed;*/
-  /*position: fixed;*/
-  border: 1px solid black;
+  border: 1px solid white;
   list-style: none;
   margin: 0;
   padding: 0;
-  /*max-width: 20%;
-  min-width: 15%;
-  height: 95vh;*/
   border-radius: 5px;
   overflow-x: hidden;
 }
@@ -56,7 +44,6 @@ div {
   position: fixed;
   top: 2vh;
   right: 0;
-  /*border: 1px solid black;*/
   list-style: none;
   margin: 0;
   padding: 0;
@@ -67,14 +54,16 @@ div {
 
 .single-open-tab {
   font-size: 14px;
-  border-top: 1px solid black;
+  border-top: 1px solid white;
   padding-left: 10px;
   padding-top: 10px;
   height: 28px;
   white-space: nowrap;
   overflow: hidden;
-  /*background-color: silver;*/
-  /*cursor: url("../docs/openhand.cur"), default !important;*/
+}
+
+.single-open-tab:hover {
+  background-color: darkcyan;
 }
 
 .single-open-tab:first-child {
@@ -85,7 +74,7 @@ div {
   list-style: none;
   display: relative;
   overflow: hidden;
-  border: 1px solid black;
+  border: 1px solid white;
   min-height: 80px;
   margin-top: 0;
   padding: 5px;
@@ -139,7 +128,6 @@ div {
   font-size: 14px;
   z-index: 100;
   display: none;
-  /*background-color: transparent;*/
   border: 1px solid gray;
 }
 
@@ -154,6 +142,7 @@ li:hover .hidden-remove-saved {
 
 .hidden-remove-saved:hover {
   background-color: white;
+  color: red;
 }
 
 .hidden-remove-open:hover {
@@ -161,12 +150,10 @@ li:hover .hidden-remove-saved {
 }
 
 .grabbable {
-  /*background-color: green;*/
   cursor: move; /* fallback if grab cursor is unsupported */
   cursor: grab;
   cursor: -moz-grab;
   cursor: -webkit-grab;
-  /*border: 10px solid green;*/
 }
 
 .grabbable:active {
@@ -176,7 +163,6 @@ li:hover .hidden-remove-saved {
 }
 
 .group-name {
-  /*background-color: red;*/
   display: inline-block;
   /*margin-top: 20px;*/
   padding: 0;
@@ -215,10 +201,10 @@ li:hover .hidden-remove-saved {
   border-radius: 5px;
   background-color: white;
   outline: none;
+  color: black;
 }
 
 .clear-group-tabs {
-  /*float: right;*/
   position: relative;
   height: 24px;
   width: 125px;
@@ -229,10 +215,10 @@ li:hover .hidden-remove-saved {
   border-radius: 5px;
   background-color: white;
   outline: none;
+  color: black;
 }
 
 .delete-tab-group, .open-all-tabs {
-  /*float: left;*/
   position: relative;
   height: 24px;
   width: 125px;
@@ -243,11 +229,12 @@ li:hover .hidden-remove-saved {
   border-radius: 5px;
   background-color: white;
   outline: none;
+  color: black;
 }
 
 .delete-tab-group:hover, .open-all-tabs:hover, .clear-group-tabs:hover, .create-new-group:hover {
     background-color: #ff3434;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .hidden {
