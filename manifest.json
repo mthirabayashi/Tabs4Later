@@ -3,7 +3,7 @@
 
   "name": "Tabs4Later",
   "description": "This extension allows users to store currently open tabs into temporary saved groups to be re-opened at a later time",
-  "version": "1.12",
+  "version": "1.13",
 
   "browser_action": {
     "default_icon": "./docs/1_Desktop_Icons/icon_048.png",
